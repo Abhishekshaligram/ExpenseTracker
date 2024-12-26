@@ -1,0 +1,62 @@
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+::ng-deep .p-dropdown {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+    
+}
+
+::ng-deep .p-dropdown:hover,
+.p-dropdown:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.p-dropdown-clear {
+    color: #495057;
+}
+
+.p-dropdown-clear:hover {
+    color: #007bff;
+}
+
+::ng-deep .p-calendar {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+   // padding: 0.7rem;
+    //cursor: pointer;
+    // display: inline-block;
+    // position: relative;
+}
+
+::ng-deep .p-calendar input {
+    width: 100%;
+    border: 1px solid #ced4da; /* Apply border to the input field */
+    border-radius: 4px;
+    // padding: 0.5rem;
+    outline: none;
+    background-color: #fff;
+    text-align: center;
+    color: #495057;
+    font-size: 16px;
+    height: 50px; /* Increase the height slightly */
+    line-height: 1.4; /* Maintain proper line height for alignment */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Optional for enhancing focus */
+}
+
+// ::ng-deep .p-calendar-overlay {
+//     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+//     position: absolute;
+//     z-index: 9999;
+// }

@@ -1,0 +1,49 @@
+/* General Styles */
+.login-page {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .card {
+    animation: slideUp 1s ease-out;
+  }
+  
+  .welcome {
+    animation: bounce 2s infinite;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Input Group Styling */
+  .input-group .btn-outline-secondary {
+    border-left: none;
+  }
+  

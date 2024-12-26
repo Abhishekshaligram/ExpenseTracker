@@ -1,0 +1,43 @@
+
+
+
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light login-page">
+  <div class="card shadow-lg p-4 rounded w-100" style="max-width: 400px; background: linear-gradient(to right, #ffffff, #e3f2fd);">
+    <div class="text-center mb-3">
+      <!-- <img src="/src/assets/images/img/expense.svg" alt="Logo" class="logo mb-2 img-fluid" style="max-width: 150px;"> -->
+      <h2 class="text-primary welcome">Welcome Back!</h2>
+    </div>
+    <div class="text-center mb-4">
+      <span class="text-muted body-2 text-secondary mt-2 animate__animated animate__fadeIn animate__delay-1s">Sign in with your credentials below</span>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label fw-bold">Email<span class="text-danger">*</span></label>
+        <input type="email" formControlName="Email" id="exampleInputEmail1" class="form-control" 
+          placeholder="Enter Email" maxlength="100" required />
+        <app-show-error [field]="loginForm.get('Email')" [name]="'Email'"></app-show-error>
+      </div>
+      <div class="mb-3 position-relative">
+        <label for="exampleInputPassword1" class="form-label fw-bold">Password<span class="text-danger">*</span></label>
+        <div class="input-group">
+          <input type="{{ IsShowPassword ? 'text' : 'password' }}" formControlName="password" id="exampleInputPassword1" 
+            class="form-control" placeholder="Enter Password" maxlength="100" required />
+          <button type="button" class="btn btn-outline-secondary" (click)="togglePasswordVisibility()">
+            <i [class]="'pi ' + (IsShowPassword ? 'pi-eye-slash' : 'pi-eye')"></i>
+          </button>
+        </div>
+        <app-show-error [field]="loginForm.get('password')" [name]="'Password'"></app-show-error>
+      </div>
+      <div class="d-flex justify-content-end mb-3">
+        <a href="javascript:void(0)" class="text-primary text-decoration-none fw-bold" (click)="onForgotPassword()">Forgot Password?</a>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Login</button>
+      </div>
+      <div class="d-flex justify-content-center mt-2">
+        <a href="javascript:void(0)" class="text-primary text-decoration-none fw-bold" (click)="openModel(0)">Register?</a>
+      </div>
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+<p-dialog [(visible)]="visible" [modal]="true" [style]="{ width: '25rem' }" [draggable]="false" [resizable]="false"  [closable]="false">
+    <ng-template pTemplate="header">
+        <span class="p-dialog-title">{{ title }}</span>
+    </ng-template>
+    <p class="mb-2">{{ message }}</p>
+    <ng-template pTemplate="footer">
+        <div class="flex gap-2 items-center justify-content-center p-0">
+            <p-button (click)="cancel()"
+                styleClass="w-full primary-button-outline p-button-raised p-button-info w-full">
+                {{ cancelButtonText }}
+            </p-button>
+            <p-button (click)="confirm()" styleClass="w-full primary-button p-button-raised p-button-info w-full">
+                {{ confirmButtonText }}
+            </p-button>
+        </div>
+    </ng-template>
+</p-dialog> 

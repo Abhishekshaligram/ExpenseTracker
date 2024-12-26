@@ -1,0 +1,130 @@
+<div class="ms-auto">
+  <ul class="list-unstyled">
+    <li class="mr-3">
+      <div class="dropdown pc-h-item" ngbDropdown>
+        <a
+          class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0"
+          data-bs-toggle="dropdown"
+          href="javascript:void(0)"
+          ngbDropdownToggle
+        >
+          <i class="ti ti-bell"></i>
+          <span
+            class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle"
+            *ngIf="unreadNotificationCount > 0"
+          >
+            {{ unreadNotificationCount }}
+          </span>
+        </a>
+        <div
+          class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown"
+          ngbDropdownMenu
+        >
+          <div class="dropdown-header">
+            <a
+              href="javascript:void(0)"
+              class="link-primary float-end text-decoration-underline"
+              (click)="markAllAsRead()"
+            >
+              Mark all as read
+            </a>
+            <h5>
+              All Notifications
+              <span class="badge bg-warning rounded-pill ms-1">
+                {{ notifications?.length }}
+              </span>
+            </h5>
+          </div>
+          <ng-scrollbar style="height: calc(100vh - 215px)" visibility="hover">
+            <div class="dropdown-header px-0 text-wrap">
+              <div class="list-group list-group-flush w-100">
+                <div
+                  class="list-group-item"
+                  *ngFor="let notification of notifications"
+                >
+                  <a
+                    class="list-group-item list-group-item-action"
+                    (click)="markAsRead(notification)"
+                  >
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="assets/images/user/avatar-2.jpg"
+                          alt="user-image"
+                          class="user-avtar"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-1">
+                        <span class="float-end text-muted">
+                          {{ notification.createdAt | date: 'short' }}
+                        </span>
+                        <h5>{{ notification.notificationMessage }}</h5>
+                        <p
+                          class="text-body fs-6 text-success"
+                          *ngIf="!isNotificationRead(notification)"
+                        >
+                          New
+                        </p>
+                        <div
+                          class="badge rounded-pill bg-light-danger"
+                          *ngIf="isNotificationRead(notification)"
+                        >
+                          Read
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-scrollbar>
+          <div class="dropdown-divider"></div>
+          <div class="text-center py-2">
+            <a
+              href="javascript:void(0)"
+              class="link-primary"
+              (click)="markAllAsRead()"
+            >
+              Mark all as read
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+  
+    <li>
+      <div class="dropdown pc-h-item header-user-profile" ngbDropdown>
+        <div class="d-flex align-items-center" ngbDropdownToggle style="cursor: pointer;">
+          <img src="{{ profileImage }}" alt="user-image" class="user-avtar me-2" />
+          <span class="text-black"> {{userName}} </span>
+        </div>
+        <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown" ngbDropdownMenu>
+          <div class="dropdown-header">
+            <ng-scrollbar style="height: calc(20vh - 50px)" visibility="hover">
+
+              <a class="vex-user-menu-item" matRipple
+              matRippleColor="rgb(var(--color-primary), 0.1)">
+              <i id="editimag" class="pi pi-pencil" onclick="document.getElementById('fileInput').click()"> Upload Image</i>
+              <input type="file" (change)="profilePictureSave($event)" id="fileInput" class="hidden" />
+            </a>
+            
+
+              <a [routerLink]="['change-password']" class="vex-user-menu-item" matRipple
+                matRippleColor="rgb(var(--color-primary), 0.1)">
+                <i class="pi pi pi-key vex-user-menu-item__icon icon-sm"></i>
+                <div class="vex-user-menu-item__label">Change Password</div>
+              </a>
+
+              <a (click)="logOut()" class="vex-user-menu-item" matRipple
+                matRippleColor="rgb(var(--color-primary), 0.1)">
+                <i class="pi pi-sign-out vex-user-menu-item__icon icon-sm"></i>
+                <div class="vex-user-menu-item__label">logout</div>
+              </a>
+            </ng-scrollbar>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

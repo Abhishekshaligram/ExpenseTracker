@@ -1,0 +1,139 @@
+<div class="container ">
+    <div class="card">
+        <p-table #dt [value]="BudgetList" dataKey="id" styleClass="p-datatable-customers" [lazy]="true"
+            (onLazyLoad)="loadData($event)" [totalRecords]="totalRecord" [rows]="rows" [(first)]="first"
+            [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50,100]" responsiveLayout="scroll"
+            [loading]="loading" styleClass="p-datatable-customers" sortField="FirstName" [paginator]="true"
+            currentPageReportTemplate="Showing {first} to {last} of {{
+          totalRecord
+        }} entries" [filterDelay]="0">
+            <ng-template pTemplate="caption">
+                 <div class="table-header flex items-center justify-content-between w-100">
+                    <div class="header-title">Budget Management List</div>
+                    <div class="search-main flex items-center gap-2">
+                        <div class="flex items-center justify-end gap-1 py-4 px-3 flex-wrap">
+                            <div class="col-span-1 lg:col-span-1">
+                                <p-button type="button" label="Add Budget" [icon]="primeIcons.PLUS"
+                                    styleClass="primary-button p-button-raised p-button-info" (click)="openModel(0)"
+                                    class="text-white"></p-button>
+                            </div>
+                        </div>
+                        <div class="col-span-1 lg:col-span-1">
+                            <p-button type="button" label="" icon="pi pi-filter"
+                                styleClass="primary-button-outline reset-btn p-button-raised p-button-info w-full"
+                                (click)="ShowHideFilters()"></p-button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="table-header flex items-center justify-content-between w-100" *ngIf="!showFilters">
+                    <form [formGroup]="managementForm" novalidate> 
+                    <div class="search-main flex items-center gap-2">
+                        <div class="flex items-center justify-end gap-4 py-4 px-4 flex-wrap">
+                            
+                            <!-- <div class="col-span-1 lg:col-span-1">
+                                <p-dropdown formControlName="userName" [options]="UserList" placeholder="User Name"
+                                    [style]="{ width: '100%' }" optionLabel="userName" 
+                                    (onChange)="filter($event)" [showClear]="true" appendTo="body"></p-dropdown>
+                            </div> -->
+                                <div class="col-span-1 lg:col-span-1">
+                                    <p-dropdown formControlName="categoryName" [options]="categoryList"
+                                        placeholder="Select Category" [style]="{ width: '100%' }" optionLabel="categoryName"
+                                        (onChange)="filter($event)" [showClear]="true"></p-dropdown>
+                                </div>
+                            <div class="col-span-1 lg:col-span-1">
+                                <p-calendar inputId="icondisplay" appendTo="body" formControlName="startdate"
+                                    autoWidth="false" [style]="{ width: '100%' }" placeholder="Start Date"
+                                    (onSelect)="filter($event)" [readonlyInput]="true" 
+                                    [showIcon]="true" [selectOtherMonths]="true" [dateFormat]="'dd-M-yy'" ></p-calendar>
+                            </div>
+                            <div class="col-span-1 lg:col-span-1">
+                                <p-calendar inputId="icondisplay" appendTo="body" formControlName="enddate"
+                                    autoWidth="false" [style]="{ width: '100%' }" placeholder="End Date"
+                                    [minDate]="endMinDate" (onSelect)="filter($event)" [readonlyInput]="true"
+                                    [showIcon]="true" [selectOtherMonths]="true" [dateFormat]="'dd-M-yy'"></p-calendar>
+
+                            </div>
+                            <div class="col-span-1 lg:col-span-1">
+                                <p-button type="button" label="" icon="pi pi-refresh"
+                                    styleClass="primary-button-outline reset-btn p-button-raised p-button-info w-full"
+                                    (click)="resetFilters()"></p-button>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </form>
+                </div> 
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="UserName">
+                        <div class="flex">
+                            <span> User Name </span>
+                            <p-sortIcon field="UserName"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="CategoryName">
+                        <div class="flex">
+                            <span> Category Name </span>
+                            <p-sortIcon field="CategoryName"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="Amount">
+                        <div class="flex">
+                            <span>Amount</span>
+                            <p-sortIcon field="Amount"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="StartDate">
+                        <div class="flex">
+                            <span>Start Date</span>
+                            <p-sortIcon field="StartDate"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="EndDate">
+                        <div class="flex">
+                            <span>End Date</span>
+                            <p-sortIcon field="EndDate"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th class="text-center">
+                        Action
+                    </th>
+
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-user>
+                <tr *ngIf="isLoader">
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+
+                </tr>
+                <tr *ngIf="!isLoader" class="p-selectable-row">
+                    <td>{{ user.userName }}</td>
+                    <td>{{ user.categoryName }}</td>
+                    <td>{{ user.amount }}</td>
+                    <td>{{ user.startDate |date:'dd-MM-yyyy'}}</td>
+                    <td>{{ user.endDate |date:'dd-MM-yyyy'}}</td>
+                    <td class="action">
+                        <div class="action-btn-grp">
+                            <p-button [icon]="primeIcons.PENCIL"
+                                styleClass="p-button-raised p-button-text p-button-info edit-btn"
+                                (onClick)="openModel(user)"></p-button>
+                            <p-button class="ml-1" [icon]="primeIcons.TRASH"
+                                (onClick)="onDelete(user.budgetID)"
+                                styleClass="p-button-raised p-button-text p-button-danger trash-btn"></p-button>
+                        </div>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td class="text-center font-bold" colspan="8">No Records Found!</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

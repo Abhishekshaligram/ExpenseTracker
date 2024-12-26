@@ -1,0 +1,151 @@
+<div class="row">
+   <!-- Total Budget Card -->
+   <div class="col-xl-4 col-md-6">
+    <div class="card earning-card bg-gradient-secondary text-white shadow-lg position-relative animate-card" style="height: 175px;">
+      <div class="background-circle small"></div>
+      <div class="background-circle large"></div>
+      <div class="card-body">
+        <span class="text-white d-block display-6 fw-bold my-2 animate-text">
+          Total Budget
+          <i class="ti ti-circle-arrow-up-right opacity-75"></i>
+        </span>
+        <p class="mb-0 fs-2 opacity-75 animate-number">{{ budgetList[0]?.totalBudget }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total Expenses Card -->
+  <div class="col-xl-4 col-md-6">
+    <div class="card earning-card bg-gradient-primary text-white shadow-lg position-relative animate-card" style="height: 175px;">
+      <div class="background-circle small"></div>
+      <div class="background-circle large"></div>
+      <div class="card-body">
+        <span class="text-white d-block display-6 fw-bold my-2 animate-text">
+          Total Expenses
+          <i class="ti ti-circle-arrow-up-right opacity-75"></i>
+        </span>
+        <p class="mb-0 fs-2 opacity-75 animate-number">{{ budgetList[0]?.totalExpenses }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remaining Budget Card -->
+  <div class="col-xl-4 col-md-6">
+    <div class="card earning-card bg-gradient-success text-white shadow-lg position-relative animate-card" style="height: 175px;">
+      <div class="background-circle small"></div>
+      <div class="background-circle large"></div>
+      <div class="card-body">
+        <span class="text-white d-block display-6 fw-bold my-2 animate-text">
+          Remaining Budget
+          <i class="ti ti-circle-arrow-up-right opacity-75"></i>
+        </span>
+        <p class="mb-0 fs-2 opacity-75 animate-number">{{ budgetList[0]?.remainingBudget }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-8 col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row mb-3 align-items-center">
+          <div class="col">
+            <div class="text-sm f-w-600">Expense Graph</div>
+          </div>
+          <div class="col-auto">
+            <select class="form-select p-r-35" title="Select">
+              <option>Today</option>
+              <option selected>Month</option>
+              <option>Year</option>
+            </select>
+          </div>
+        </div>
+        <apx-chart
+          #chart
+          [series]="chartOptions?.series"
+          [chart]="chartOptions?.chart"
+          [dataLabels]="chartOptions?.dataLabels"
+          [plotOptions]="chartOptions?.plotOptions"
+          [responsive]="chartOptions?.responsive"
+          [xaxis]="chartOptions?.xaxis"
+          [colors]="chartOptions?.colors"
+          [tooltip]="chartOptions?.tooltip"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- this is for popular stock -->
+  <div class="col-xl-4 col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row mb-3 align-items-center">
+          <div class="col">
+            <h4>Transactions Money</h4>
+          </div>
+          <div class="col-auto">
+            <div class="col-span-1 lg:col-span-1">
+              <p-button type="button" label="PDF" icon="pi pi-file-pdf"
+                styleClass="primary-button-outline reset-btn p-button-raised p-button-info w-full"
+                (click)="pdfDownload()"></p-button>
+            </div>
+          </div>
+        </div>
+        <div class="rounded bg-light-secondary overflow-hidden mb-3">
+          <!-- <div class="px-3 pt-3">
+            <div class="row mb-1 align-items-start">
+              <div class="col">
+                <h5 class="text-secondary mb-0">Education</h5>
+                <small class="text-muted">10% Profit</small>
+              </div>
+              <div class="col-auto">
+                <h4 class="mb-0">₹2000.00</h4>
+              </div>
+            </div>
+            <app-bajaj-chart />
+          </div> -->
+        </div>
+       
+        <ul class="list-group list-group-flush">
+          <li
+            class="list-group-item px-0"
+            *ngFor="let transaction of (showAll ? TransictionList : TransictionList | slice:0:5); let i = index"
+            [ngClass]="{'pb-0': i === (showAll ? TransictionList.length - 1 : 4)}"
+          >
+            <div class="row align-items-start">
+              <div class="col">
+                <h5 class="mb-0">{{ transaction.categoryName }}</h5>
+                <small
+                  [ngClass]="{'text-danger': transaction.amount < 0, 'text-primary': transaction.amount >= 0}"
+                  style="font-weight: bold;"
+                >
+                 {{ transaction.createdDate | date:'dd-MM-yyyy HH:mm' }}
+                </small>
+              </div>
+              <div class="col-auto">
+                <h4 class="mb-0">
+                  {{ transaction.amount > 0 ? '-' : '' }}{{ transaction.amount | currency:'INR' }}
+                  <span
+                    class="ms-2 align-top avatar avatar-xxs"
+                    [ngClass]="{'bg-light-success': transaction.amount > 0, 'bg-light-danger': transaction.amount <= 0}"
+                  >
+                    <i
+                      class="ti"
+                      [ngClass]="{'ti-chevron-up text-success': transaction.amount > 0, 'ti-chevron-down text-danger': transaction.amount <= 0}"
+                    ></i>
+                  </span>
+                </h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="text-center">
+          <a href="javascript:void(0)" (click)="toggleShowAll()" class="b-b-primary text-primary f-w-500">
+            View all <i class="ti ti-chevron-right"></i>
+          </a>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>

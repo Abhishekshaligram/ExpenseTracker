@@ -1,0 +1,28 @@
+::ng-deep .custom-dropdown .p-dropdown {
+    border: 2px solid #d1d5db; /* Tailwind blue-600 */
+    border-radius: 8px;
+    padding: 6px;
+  }
+  
+  ::ng-deep .custom-dropdown .p-dropdown:hover {
+    border-color: #1a668a; /* Tailwind blue-700 */
+  }
+  
+//   ::ng-deep .custom-dropdown .p-dropdown.p-focus {
+//     box-shadow: 0 0 5px 2px #2563eb;
+//     border-color: #1d4ed8;
+//   }
+  
+  ::ng-deep .custom-dropdown .p-dropdown-label {
+    color: #333; /* Darker text for better visibility */
+  }
+  
+  ::ng-deep.custom-dropdown .p-dropdown-clear-icon,
+  .custom-dropdown .p-dropdown-filter-icon {
+    color: #2563eb; /* Icons in blue */
+  }
+  
+//   ::ng-deep .custom-dropdown .p-dropdown-panel {
+//     border: 2px solid #2563eb;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   }

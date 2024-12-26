@@ -1,0 +1,119 @@
+.nav-tabs {
+  border-bottom: none !important;
+}
+body.berry-dark .nav-tabs .nav-link,
+body.berry-dark .tab-content {
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.earning-card {
+  .round {
+    &.secondary-round {
+      background: #4527a0;
+    }
+    &.primary-round {
+      background: #1565c0;
+    }
+  }
+}
+
+.total-income-card {
+  .avatar {
+    background: #1565c0;
+  }
+}
+
+
+
+///////////////////////
+/* General card styling */
+.card.earning-card {
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.earning-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Background circles for styling */
+.background-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.background-circle.small {
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.background-circle.large {
+  width: 100px;
+  height: 100px;
+  bottom: 10%;
+  right: 5%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+/* Text and animation */
+.display-6 {
+  font-size: 1.5rem;
+}
+
+.animate-text {
+  animation: fadeInText 1s ease;
+}
+
+.animate-number {
+  animation: fadeInNumber 1.5s ease;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInNumber {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive spacing */
+.row.g-3 {
+  gap: 15px;
+}

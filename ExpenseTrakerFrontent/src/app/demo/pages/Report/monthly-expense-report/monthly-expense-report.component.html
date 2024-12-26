@@ -1,0 +1,93 @@
+<div class="container "> 
+    <div class="card">
+        <p-table #dt [value]="monthlyExpenseReport" dataKey="id" styleClass="p-datatable-customers" [lazy]="true"
+            (onLazyLoad)="loadData($event)" [totalRecords]="totalRecord" [rows]="rows" [(first)]="first"
+            [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50,100]" responsiveLayout="scroll"
+            [loading]="loading" styleClass="p-datatable-customers" sortField="FirstName" [paginator]="true"
+            currentPageReportTemplate="Showing {first} to {last} of {{
+          totalRecord
+        }} entries" [filterDelay]="0">
+            <ng-template pTemplate="caption">
+                <div class="table-header flex items-center justify-content-between w-100">
+                    <div class="header-title">Monthly Expense Report</div>
+                    
+                    <div class="flex items-center justify-end gap-3 py-4 px-3 flex-wrap">
+                        <!-- <div class="col-span-1 lg:col-span-1">
+                            <p-dropdown [(ngModel)]="userName" [options]="UserList" placeholder="User Name" 
+                                        [style]="{ width: '100%' }" optionLabel="userName" [filter]="true" 
+                                        (ngModelChange)="onChange()" [showClear]="true" appendTo="body"></p-dropdown>
+                        </div> -->
+                        <div class="col-span-1 lg:col-span-1">
+                            <p-dropdown [(ngModel)]="monthName" [options]="monthList" placeholder="Select Month" 
+                                        [style]="{ width: '100%' }" optionLabel="label" [filter]="true" 
+                                        (ngModelChange)="onChange()" [showClear]="true"></p-dropdown>
+                        </div>
+                        <div class="col-span-1 lg:col-span-1">
+                            <p-calendar [(ngModel)]="dateValue" view="year" dateFormat="yy" [style]="{ width: '100%' }"
+                            (ngModelChange)="onChange()" placeholder="Select Year" [readonlyInput]="true"></p-calendar>
+                        </div>  
+                        <div class="search-main flex items-center gap-2">
+                            <p-button type="button" label="Export" icon="pi pi-download"
+                                   styleClass="primary-button p-button-raised p-button-info w-full" (click)="downloadExpenseReport()" class="text-white"></p-button>
+                        </div>   
+                        <div class="search-main flex items-center gap-2">
+                        <p-button type="button" label="" icon="pi pi-refresh"
+                           styleClass="primary-button-outline reset-btn p-button-raised p-button-info w-full"
+                               (click)="resetFilters()"></p-button>         
+                              </div>          
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="CategoryName">
+                        <div class="flex">
+                            <span> Category Name </span>
+                            <p-sortIcon field="CategoryName"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="UserName">
+                        <div class="flex">
+                            <span>User Name</span>
+                            <p-sortIcon field="UserName"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="TotalAmount">
+                        <div class="flex">
+                            <span>Total Amount</span>
+                            <p-sortIcon field="TotalAmount"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="TotalTransactions">
+                        <div class="flex">
+                            <span>Total Transaction</span>
+                            <p-sortIcon field="TotalTransactions"></p-sortIcon>
+                        </div>
+                    </th>
+                   
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-user>
+                <tr *ngIf="isLoader">
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>      
+                </tr>
+                <tr *ngIf="!isLoader" class="p-selectable-row">
+                    <td>{{ user.categoryName }}</td>
+                    <td>{{ user.userName }}</td>
+                    <td>{{ user.totalAmount }}</td>
+                    <td>{{ user.totalTransactions}}</td>   
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td class="text-center font-bold" colspan="8">No Records Found!</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
+

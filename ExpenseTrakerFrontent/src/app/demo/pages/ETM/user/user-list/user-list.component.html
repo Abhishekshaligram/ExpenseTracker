@@ -1,0 +1,92 @@
+<div class="container ">
+    <div class="card">
+        <p-table #dt [value]="userList" dataKey="id" styleClass="p-datatable-customers" [lazy]="true"
+            (onLazyLoad)="loadData($event)" [totalRecords]="totalRecord" [rows]="rows" [(first)]="first"
+            [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50,100]" responsiveLayout="scroll"
+            [loading]="loading" styleClass="p-datatable-customers" sortField="FirstName" [paginator]="true"
+            currentPageReportTemplate="Showing {first} to {last} of {{
+          totalRecord
+        }} entries" [filterDelay]="0">
+            <ng-template pTemplate="caption">
+                <div class="table-header flex items-center justify-content-between w-100">
+                    <div class="header-title">User List</div>
+                    <div class="search-main flex items-center gap-2">
+                        <p-button type="button" label="Add User" [icon]="primeIcons.PLUS"
+                            styleClass="primary-button p-button-raised p-button-info" (click)="openModel(0)" class="text-white"></p-button>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="UserName">
+                        <div class="flex">
+                            <span> User Name </span>
+                            <p-sortIcon field="UserName"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="Email">
+                        <div class="flex">
+                            <span>Email</span>
+                            <p-sortIcon field="Email"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="CreatedAt">
+                        <div class="flex">
+                            <span> Created Date</span>
+                            <p-sortIcon field="CreatedAt"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th pSortableColumn="Status">
+                        <div class="flex">
+                            <span> Status</span>
+                            <p-sortIcon field="Status"></p-sortIcon>
+                        </div>
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-user>
+                <tr *ngIf="isLoader">
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                    <td><p-skeleton /></td>
+                </tr>
+                <tr *ngIf="!isLoader" class="p-selectable-row">
+                    <td>{{ user.userName }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.createdAt | date: 'dd-MM-yyyy' }}</td>
+                    <td>
+                        <div class="status" [ngClass]="
+                              user.isActive === false
+                                ? 'status-red'
+                                : user.isActive === true
+                                  ? 'status-green'
+                                  : ''
+                            ">
+                            {{ user.isActive ? "Active " : "InActive" }}
+                          </div>
+                       </td>
+                    <td class="action">
+                        <div class="action-btn-grp">
+                            <p-button [icon]="primeIcons.PENCIL"
+                                styleClass="p-button-raised p-button-text p-button-info edit-btn"
+                                (onClick)="openModel(user)"></p-button>
+                            <p-button class="ml-1" [icon]="primeIcons.TRASH"
+                                (onClick)="onDelete(user.userID)"
+                                styleClass="p-button-raised p-button-text p-button-danger trash-btn"></p-button>
+                        </div>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td class="text-center font-bold" colspan="8">No Records Found!</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

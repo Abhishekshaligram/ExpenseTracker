@@ -1,0 +1,44 @@
+<ng-container
+  *ngIf="fieldData?.invalid && (fieldData?.dirty || fieldData?.touched)"
+>
+  <small class="p-error block" *ngIf="fieldData?.errors?.['required']"
+    >{{ name }} is required.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['email']"
+    >You have entered an invalid email address.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['pattern']"
+    >{{ name }} is invalid.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['maxlength']"
+    >{{ name }} should be less than
+    {{ fieldData?.errors?.["maxlength"]?.requiredLength }} character.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['minlength']"
+    >{{ name }} should be greater than
+    {{ fieldData?.errors?.["minlength"]?.requiredLength }} character.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['min']"
+    >{{ name }} value minimum
+    {{ fieldData?.errors?.["min"].min }}
+    required.</small
+  >
+
+  <small class="p-error block" *ngIf="fieldData?.errors?.['max']"
+    >{{ name }} value not more than {{ fieldData?.errors?.["max"].max }}.</small
+  >
+
+  <!-- <small class="p-error block" *ngIf="fieldData?.errors?.['onlyNumber']">{{name}} allows only numbers.</small>
+
+    <small class="p-error block" *ngIf="fieldData?.errors?.['indianPhoneNumber']">Invalid {{name}}.</small>
+
+    <small class="p-error block" *ngIf="fieldData?.errors?.['compare']">{{name}} do not match.</small>
+
+    <small class="p-error block" *ngIf="fieldData?.errors?.['notSame']">{{name}} not be same.</small> -->
+</ng-container>
+

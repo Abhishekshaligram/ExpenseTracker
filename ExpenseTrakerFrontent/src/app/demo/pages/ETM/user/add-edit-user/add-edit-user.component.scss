@@ -1,0 +1,14 @@
+::ng-deep.p-checkbox-box {
+    border: 1px solid #000; /* Set the border color */
+    padding: 5px; /* Adjust padding if necessary */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+}
+::ng-deep.p-checkbox-label {
+    margin-left: 10px; /* Optional: adjust label spacing */
+}
+
+.custom-checkbox .p-checkbox-box {
+    border: 1px solid #000; /* Black border */
+    padding: 5px;
+    border-radius: 4px;
+}

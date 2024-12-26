@@ -1,0 +1,35 @@
+
+    <form [formGroup]="UserForm" novalidate >
+        <div class="field mt-4">
+          <label for="userName" class="block text-gray-600 font-medium mb-2">User Name</label>
+          <input 
+            type="text" 
+            pInputText 
+            placeholder="Enter your name" 
+            formControlName="userName" 
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <app-show-error [field]="UserForm.get('userName')" [name]="'User Name'"></app-show-error>
+        </div>
+        <div class="field mt-4">
+          <label for="Email" class="block text-gray-600 font-medium mb-2">Email</label>
+          <input 
+            type="text" 
+            pInputText 
+            placeholder="Enter your email" 
+            formControlName="Email" 
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <app-show-error [field]="UserForm.get('Email')" [name]="'Email'"></app-show-error>
+        </div>
+        <div class="flex flex-col mt-7">
+            <p-checkbox formControlName="isActive"  [binary]="true" inputId="binary"  label="Active"  class="custom-checkbox"></p-checkbox>
+          </div>
+        <div class="flex flex-col items-center mt-6">
+            <div class="flex flex-col items-center">
+                <button pButton type="submit" class="primary-button p-button text-white py-2 px-6 rounded-lg hover:bg-blue-600"
+                  [label]="userList.userID> 0 ? 'Update' : 'Submit'" (click)="OnSave()"></button>
+              </div>
+        </div>
+      </form>
+      

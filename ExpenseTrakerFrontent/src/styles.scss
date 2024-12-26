@@ -1,0 +1,314 @@
+/* You can add global styles to this file, and also import other style files */
+/**======================================================================
+=========================================================================
+Template Name: berry - Most Complete Bootstrap Admin Template
+Author: CodedThemes
+Support: https://codedthemes.support-hub.io/
+File: style.css
+=========================================================================
+=================================================================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// main framework
+// main framework
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/variables-dark';
+
+@import 'scss/settings/color-variables';
+@import 'scss/settings/theme-variables';
+@import 'scss/settings/bootstrap-variables.scss';
+
+@import 'scss/bootstrap/bootstrap.scss';
+
+@import 'node_modules/bootstrap/scss/utilities';
+@import 'node_modules/bootstrap/scss/utilities/api';
+
+// main framework
+@import 'scss/themes/generic.scss';
+@import 'scss/themes/general.scss';
+
+// Layouts
+@import 'scss/themes/layouts/layouts';
+
+// Componants
+@import 'scss/themes/components/components';
+
+// pages
+@import 'scss/themes/pages/page.scss';
+
+@import 'scss/themes/customizer';
+@import 'scss/style-preset.scss';
+
+// fonts
+@import url('scss/fonts/berry/berry-icons.css'); /** custom font icons - berry **/
+@import 'scss/fonts/tabler-icons.min.css';
+@import 'scss/fonts/phosphor/duotone/style.css';
+
+// //primeng
+// @import "~primeng/resources/themes/lara-light-blue/theme.css";
+// @import "~primeng/resources/primeng.min.css";
+
+.primary-button {
+    background: #f27b22 !important;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    line-height: 32px;
+    padding: 8px 15px !important;
+    min-width: 120px;
+    font-weight: 600;
+    border: 1px solid #f27b22 !important;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.2s;
+  
+    .mat-icon {
+      color: #fff;
+      transition: color 0.3s;
+    }
+  
+    &:hover {
+      background: #fff !important;
+      color: #f27b22 !important;
+  
+      .mat-icon {
+        color: #f27b22;
+      }
+    }
+  
+    &:disabled {
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, 0.38) !important;
+    }
+  }
+  
+  .primary-button-outline {
+    background: #fff !important;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    line-height: 32px;
+    padding: 8px 15px !important;
+    min-width: 120px;
+    font-weight: 600;
+    border: 1px solid #f27b22 !important;
+    justify-content: center;
+    color: #f27b22 !important;
+    cursor: pointer;
+    transition: background 0.3s, color 0.2s;
+  
+    .mat-icon {
+      color: #f27b22;
+      transition: color 0.3s;
+    }
+  
+    &:hover {
+      background: #f27b22 !important;
+      color: #fff !important;
+  
+      .mat-icon {
+        color: #fff;
+      }
+  
+      &:disabled {
+        box-shadow: none;
+        border-color: rgba(0, 0, 0, 0.38) !important;
+      }
+    }
+  
+  }
+  .edit-btn {
+    &.p-button-icon-only {
+      background: #469E48 !important;
+      color: #fff;
+    }
+
+    &:hover {
+      &.p-button-icon-only {
+        background: transparent !important;
+        border: 1px solid #469E48 !important;
+        color: #469E48 !important;
+      }
+    }
+  }
+  .action-btn-grp {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+  
+    &.detail-action-btns {
+      justify-content: flex-start;
+    }
+  
+    .p-button-icon-only {
+      background: #E3EDF9 !important;
+      border-radius: 100%;
+      padding: 4px !important;
+      width: 25px !important;
+      height: 25px !important;
+      text-decoration: none !important;
+  
+      .pi {
+        font-size: 14px;
+      }
+    }
+  
+    .approve-btn {
+      &.p-button-icon-only {
+        background: #469E48 !important;
+        color: #fff;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #469E48 !important;
+          color: #469E48 !important;
+        }
+      }
+    }
+  
+    .reject-btn {
+      &.p-button-icon-only {
+        background: #ED3224 !important;
+        color: #fff !important;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #ED3224 !important;
+          color: #ED3224 !important;
+        }
+      }
+    }
+  
+  
+    .edit-btn {
+      &.p-button-icon-only {
+        background: #469E48 !important;
+        color: #fff;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #469E48 !important;
+          color: #469E48 !important;
+        }
+      }
+    }
+  
+    .view-info {
+      &.p-button-icon-only {
+        background: #496ee8 !important;
+        color: #fff !important;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #496ee8 !important;
+          color: #496ee8 !important;
+        }
+      }
+    }
+  
+    .edit-info {
+      &.p-button-icon-only {
+        background: #235EA9 !important;
+        color: #fff !important;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #235EA9 !important;
+          color: #235EA9 !important;
+        }
+      }
+    }
+  
+    .trash-btn {
+      &.p-button-icon-only {
+        background: #e74a3b !important;
+        color: #fff !important;
+      }
+  
+      &:hover {
+        &.p-button-icon-only {
+          background: transparent !important;
+          border: 1px solid #e74a3b !important;
+          color: #e74a3b !important;
+        }
+      }
+    }
+  }
+  .status {
+    background: #ffffff;
+    border: 1px solid #000000;
+    font-weight: 600;
+    text-align: center;
+    color: #333333;
+    padding: 4px 6px;
+    border-radius: 30px;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+  
+    &.status-green {
+      background: #c5f7e8;
+      border: 1px solid #75d9bb;
+      color: #256029;
+    }
+  
+    &.status-red {
+      background-color: #ffcdd2;
+      color: #c63737;
+      border: 1px solid #FFA7A7;
+    }
+  
+    &.status-yellow {
+      background: #FFF2E5;
+      border: 1px solid #ebbc75;
+      color: #8a5340;
+    }
+  
+    &.status-purple {
+      background: #c9b2f5;
+      border: 1px solid #b087f1;
+      color: #694382;
+    }
+  
+    &.status-blue {
+      background: #EAEFFF;
+      border: 1px solid #9aaef3;
+      color: #496ee8;
+    }
+  
+  }
+  
+  .trash-btn {
+    &.p-button-icon-only {
+      background: #e74a3b !important;
+      color: #fff !important;
+    }
+
+    &:hover {
+      &.p-button-icon-only {
+        background: transparent !important;
+        border: 1px solid #e74a3b !important;
+        color: #e74a3b !important;
+      }
+    }
+  }
