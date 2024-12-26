@@ -1,0 +1,281 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\00369575-44CF-4073-B68E-10F43D05EF69.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\00369575-44CF-4073-B68E-10F43D05EF69.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\089C5274-0039-430F-9295-BC2C4E383EF6.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\089C5274-0039-430F-9295-BC2C4E383EF6.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\0A69A4B3-4AEF-44F4-95B0-B5E999FB686D.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\0A69A4B3-4AEF-44F4-95B0-B5E999FB686D.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\1122671C-5821-43F2-A0CA-1AD105B8E288.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\1122671C-5821-43F2-A0CA-1AD105B8E288.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\1D4744FE-ABDF-4D30-8BD0-4F525DC97B63.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\1D4744FE-ABDF-4D30-8BD0-4F525DC97B63.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\22613649-648B-4A27-A21A-0322F9ECF41B.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\22613649-648B-4A27-A21A-0322F9ECF41B.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\25316132-A63B-47BC-BC0D-CCABD069C6ED.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\25316132-A63B-47BC-BC0D-CCABD069C6ED.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\25864AB8-237B-4422-8CDF-2D5B89D8B532.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\25864AB8-237B-4422-8CDF-2D5B89D8B532.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\28ED4810-65EC-4A35-ACBC-CC2E0C57E178.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\28ED4810-65EC-4A35-ACBC-CC2E0C57E178.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\2CF33241-EA3B-41FB-8FF6-326C664C58A9.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\2CF33241-EA3B-41FB-8FF6-326C664C58A9.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\32B414FA-B93C-4F07-B501-29BD896BA80A.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\32B414FA-B93C-4F07-B501-29BD896BA80A.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\38AC2062-5E15-49BF-BFBD-4D0DA20EF3AA.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\38AC2062-5E15-49BF-BFBD-4D0DA20EF3AA.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\3C8D139D-E40B-4552-B57E-95418B980AF3.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\3C8D139D-E40B-4552-B57E-95418B980AF3.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\3F6FB453-59F3-4F6E-81CC-4DF4A96DB8E1.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\3F6FB453-59F3-4F6E-81CC-4DF4A96DB8E1.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\3F8C9268-1B3A-463C-96E0-223F489738A9.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\3F8C9268-1B3A-463C-96E0-223F489738A9.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\415C32E3-6DAC-41BA-8891-FD1490266CB5.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\415C32E3-6DAC-41BA-8891-FD1490266CB5.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\46F00051-D428-4F4A-851B-565CF8E89ED7.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\46F00051-D428-4F4A-851B-565CF8E89ED7.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\4E303152-1CD8-4CC8-AD19-450AE7151199.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\4E303152-1CD8-4CC8-AD19-450AE7151199.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\508C89E7-E34E-4765-8CE5-BDD9963DC391.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\508C89E7-E34E-4765-8CE5-BDD9963DC391.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\51CCAE06-E144-4C81-9B6F-3BAD444CBAF0.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\51CCAE06-E144-4C81-9B6F-3BAD444CBAF0.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\55D3FAD6-0656-488D-941A-2C045EE1B2B2.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\55D3FAD6-0656-488D-941A-2C045EE1B2B2.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\587A443B-C4D5-4679-BD00-D960442AB875.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\587A443B-C4D5-4679-BD00-D960442AB875.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\5CAA6A17-4916-4C89-A338-3C32C9D45C03.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\5CAA6A17-4916-4C89-A338-3C32C9D45C03.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\666F50CC-144C-4D4D-831D-E7E1668E58BF.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\666F50CC-144C-4D4D-831D-E7E1668E58BF.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\6DFB7564-4D87-4AAA-BB88-EE8FB341E95A.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\6DFB7564-4D87-4AAA-BB88-EE8FB341E95A.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\742D7499-FE97-4ABA-AA23-158390062D7F.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\742D7499-FE97-4ABA-AA23-158390062D7F.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\75C1356D-BFEC-4F9B-8E07-B0978702E18B.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\75C1356D-BFEC-4F9B-8E07-B0978702E18B.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\76A6647E-0485-4697-912D-7FB8E200616B.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\76A6647E-0485-4697-912D-7FB8E200616B.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\8D0ACC2C-F2C9-48F2-87D1-97843E0DBA98.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\8D0ACC2C-F2C9-48F2-87D1-97843E0DBA98.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\96924552-E9EB-455D-8E3B-70C6D06FA604.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\96924552-E9EB-455D-8E3B-70C6D06FA604.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\990940B7-288E-4269-87F1-6D171FB2C26D.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\990940B7-288E-4269-87F1-6D171FB2C26D.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\990D42C2-45CD-4C23-85E9-68F01328E6C2.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\990D42C2-45CD-4C23-85E9-68F01328E6C2.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\9FACB9F0-5280-4BB9-87E8-78EEBFB59DEB.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\9FACB9F0-5280-4BB9-87E8-78EEBFB59DEB.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\A236F2BB-C01C-41BC-BE01-C9A4B31F3159.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\A236F2BB-C01C-41BC-BE01-C9A4B31F3159.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\A3BA44C3-70A0-4041-B2BE-7AB75D57227C.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\A3BA44C3-70A0-4041-B2BE-7AB75D57227C.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\A938E87A-F2CD-4CA9-B019-EFDBED51E666.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\A938E87A-F2CD-4CA9-B019-EFDBED51E666.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\A99D1D59-4705-4B5A-BE00-4E32C4E862C2.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\A99D1D59-4705-4B5A-BE00-4E32C4E862C2.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\BDDA2B34-0DD9-4BC8-A6F3-4BD8FE210177.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\BDDA2B34-0DD9-4BC8-A6F3-4BD8FE210177.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\C922D3CE-A2D0-4DBC-B4EA-1F63501E77CE.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\C922D3CE-A2D0-4DBC-B4EA-1F63501E77CE.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\E1BCFF35-72C0-47F0-ACA0-499DD8E6F36C.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\E1BCFF35-72C0-47F0-ACA0-499DD8E6F36C.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\F2AAC65C-BAD7-46F4-8258-B1D8CD670B55.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\F2AAC65C-BAD7-46F4-8258-B1D8CD670B55.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\FDA42E86-09F0-403B-8257-69E8653100D2.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\FDA42E86-09F0-403B-8257-69E8653100D2.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\AudioFiles\\FF154EBB-B7BD-4E41-96E4-CB3A28D3A9D6.wav",
+      "PackagePath": "staticwebassets\\AudioFiles\\FF154EBB-B7BD-4E41-96E4-CB3A28D3A9D6.wav"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\EmailTemplates\\LowBudgetEmailTemplate.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\LowBudgetEmailTemplate.html"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\EmailTemplates\\UserForgotPassword.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\UserForgotPassword.html"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219152255.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219152255.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219153916.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219153916.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219153958.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219153958.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219155133.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219155133.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219155246.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219155246.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219155529.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219155529.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219155817.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219155817.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219160448.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219160448.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219160719.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219160719.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219174227.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219174227.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219174403.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219174403.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241219174537.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241219174537.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241220111739.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241220111739.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241220175701.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241220175701.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241224111832.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241224111832.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ExpenseStatements\\ExpenseStatement_20241224111850.pdf",
+      "PackagePath": "staticwebassets\\ExpenseStatements\\ExpenseStatement_20241224111850.pdf"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\Images\\Shaligram.jpg",
+      "PackagePath": "staticwebassets\\Images\\Shaligram.jpg"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ProfileImages\\072ac3b0-7d12-4737-bdea-bc80d1329603.jpg",
+      "PackagePath": "staticwebassets\\ProfileImages\\072ac3b0-7d12-4737-bdea-bc80d1329603.jpg"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ProfileImages\\380004b5-ae30-4b02-806c-50669dd162eb.jpg",
+      "PackagePath": "staticwebassets\\ProfileImages\\380004b5-ae30-4b02-806c-50669dd162eb.jpg"
+    },
+    {
+      "Id": "E:\\Abhishek\\ExpenseTrakerApi\\PracticeCrud\\wwwroot\\ProfileImages\\3dbd9305-2314-453e-9904-ced034a119b2.jpg",
+      "PackagePath": "staticwebassets\\ProfileImages\\3dbd9305-2314-453e-9904-ced034a119b2.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PracticeCrud.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PracticeCrud.props",
+      "PackagePath": "build\\PracticeCrud.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PracticeCrud.props",
+      "PackagePath": "buildMultiTargeting\\PracticeCrud.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PracticeCrud.props",
+      "PackagePath": "buildTransitive\\PracticeCrud.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
